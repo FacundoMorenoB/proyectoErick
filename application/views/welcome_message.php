@@ -24,7 +24,7 @@ font-family:Fuente;
 src:url(<?=base_url()?>fonts/OleoScript-Regular.ttf);
 }
     body{
-        background-image: url(<?=base_url()?>/imagenes/puente.jpg);
+        background-image: url(<?=base_url()?>imagenes/puente.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment:fixed;
@@ -117,7 +117,7 @@ src:url(<?=base_url()?>fonts/OleoScript-Regular.ttf);
 <div class="container formulario">
          <div class="row">
                <div class="col-xs-4 col-xs-offset-4  ">
-                <img src="<?=base_url()?>/imagenes/londres%202.jpg" class="logo center-block">
+                <img src="<?=base_url()?>imagenes/londres2.jpg" class="logo center-block">
                 </div>
             
         </div>
