@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<script src="<?=base_url()?>js/jquery-2.1.4.js" type="text/javascript"></script>
-	<link href="<?=base_url()?>css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="<?=base_url()?>css/bootstrap.css" rel="stylesheet"/>
 	<link href="<?=base_url()?>css/bootstrap-theme.css" rel="stylesheet"/>
 	<link href="<?=base_url()?>css/normalize.css" rel="stylesheet">
 	<link href="<?=base_url()?>css/estilos.css" rel="stylesheet">
@@ -132,12 +132,12 @@ src:url(<?=base_url()?>fonts/OleoScript-Regular.ttf);
                     <h3>inicio de sesi&oacute;n</h3>
                 </legend>
                 
-                <form role="form" class="form-horizontal">
+                <form role="form" class="form-horizontal" action="" method="POST">
                     
                     <div class="form-group">
                     <label class="col-xs-12" for="usuario"><h4>Usuario</h4></label>
                  <div class="col-xs-10 col-xs-offset-1">
-                    <input type="text" id="usuario" class="form-control Input">
+                    <input name="usuario" type="text" id="usuario" class="form-control Input">
                         
                         </div>
                     
@@ -145,7 +145,7 @@ src:url(<?=base_url()?>fonts/OleoScript-Regular.ttf);
                     <div class="form-group">
                     <label class="col-xs-12" for="password"><h4>Password</h4></label>
                  <div class="col-xs-10 col-xs-offset-1">
-                    <input type="password" id="password" class="form-control col-xs-12 Input">
+                    <input name="password" type="password" id="password" class="form-control col-xs-12 Input">
                         </div>
                     
                     </div>

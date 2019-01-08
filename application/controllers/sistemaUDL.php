@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class SistemaUDL extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,16 +27,6 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		if (isset($_POST['password'])) {
-			$this->load->model('login_model');
-			if ($this->login_model->login($_POST['usuario'],md5($_POST['password']))) {
-				redirect('sistemaUDL');
-			}
-			else{
-				redirect('welcome');
-			}
-
-		}
-		$this->load->view('login');
+		$this->load->view('sistemaUDL');
 	}
 }
