@@ -22,6 +22,12 @@ class Login_model extends CI_Model {
 		}
 	}
 
+	public function get_roll($usuario){
+		$this->db->where('codigo_Usuario',$usuario);
+		$r = $this->db->query('select Rol_id_Rol from usuario');
+		echo $r;
+	}
+
 }
 
 /* End of file login_model.php */

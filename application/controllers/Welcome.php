@@ -30,7 +30,9 @@ class Welcome extends CI_Controller {
 		if (isset($_POST['password'])) {
 			$this->load->model('login_model');
 			if ($this->login_model->login($_POST['usuario'],md5($_POST['password']))) {
+				$this->login_model->get_roll($_POST['usuario']);
 				redirect('SistemaUDL');
+
 			}
 			else{
 				redirect('Welcome');
