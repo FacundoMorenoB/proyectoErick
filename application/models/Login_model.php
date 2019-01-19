@@ -29,13 +29,13 @@ class Login_model extends CI_Model {
 		->join('pagina_has_rol','usuario.Rol_id_Rol = pagina_has_rol.Rol_id_Rol')
 		->join('pagina','pagina_has_rol.pagina_id_pagina = pagina.id_Pagina');
 		$query = $this->db->get();
-		return $query;
-		/*
+		#return $query;
+		
 		foreach ($query->result_array() as $row)
 		{
 		        echo $row['nombre_pagina'];
 		}
-		die();*/
+		die();
 	}
 
 }
